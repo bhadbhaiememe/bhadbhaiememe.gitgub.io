@@ -25,10 +25,30 @@
         let createCannon = cannon.create;
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
+        function create(x, y, scaleX, scaleY, immovable) {
+            var platform = game.platforms.create(x, y, 'platform');
+            platform.scale.setTo(scaleX || 1, scaleY || 1);
+            platform.body.immovable = immovable || true;
+            return platform;
+        } 
+        function create(x, y, scaleX, scaleY, immovable) {
+            var platform = game.platforms.create(x, y, 'platform');
+            platform.scale.setTo(scaleX || 1, scaleY || 1);
+            platform.body.immovable = immovable || true;
+            return platform;
+        }
+        function create(x, y, scaleX, scaleY, immovable) {
+            var platform = game.platforms.create(x, y, 'platform');
+            platform.scale.setTo(scaleX || 1, scaleY || 1);
+            platform.body.immovable = immovable || true;
+            return platform;
+        }
+
         // example: 
         createCannon("top", 450);
-        
+        createCannon("bottom", 300)
+        createCannon("right",200)
+        createCannon("left",450 )
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
