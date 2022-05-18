@@ -20,13 +20,21 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
-
+var circle 
+var circ;es = [];
 
         // TODO 2 : Create a function that draws a circle 
-        
+        function drawCircle() {
+        circle = draw.randomCircleInArea( canvas, true , true '#9999', 2);
+        physik2.addRandomvelocity( circel , canvas ); 
+        view.addChild(circle);
+        circles.push(circle);
+        }
 
         // TODO 3 / 8 : Call the drawCircle() function 
-
+ffor (var i = 1; <= 5; i = i + 1 ){
+    drawCircle()
+}
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
